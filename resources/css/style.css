@@ -1,0 +1,633 @@
+
+/*========= Basic Setup ======*/
+/*============================*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 1.6rem;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+.containers{
+    width:90% !important;
+    margin: 0 auto;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/*========= Reusable Components ======*/
+/*====================================*/
+.row {
+    max-width: 95.9rem;
+    margin: 0 auto;
+}
+
+/*===== Heading ====*/
+h1 {
+    font-size: 3.4rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 2.2rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #393939;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-right: -7.8rem;
+    margin-top: -0.1rem;
+}
+:focus{
+    outline: 0;
+}
+
+/********* Start Header Section******/
+/************************************/
+header {
+    background: linear-gradient(rgba(135, 80, 156, 0.9), rgba(135, 80, 156, 0.9)), url(img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height:85vh;
+    position: relative;
+}
+
+img.logo {
+    margin-top: 3rem;
+}
+
+/*===== Main Navigation ======*/
+
+.main-nav {
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-top: 4rem;
+    margin-left: 1.8rem;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    background: rgba(100, 58, 121, 0);
+    padding: .7rem 1.1rem;
+    display: inline-block;
+    border-radius: .5rem;
+    border-radius: .5rem;
+}
+
+.active a {
+	background: #643A79 !important;
+}
+
+.main-nav li:hover a{
+    background: rgba(100, 58, 121, 1);
+
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 95.9rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-left: 2.5rem;
+    margin-right: -3.8rem;
+}
+/*===== Sticky Navigation ======*/
+.sticky {
+    position: fixed;
+    width: 100%;
+    background: #87509c;
+    height: 5.8rem;
+    box-shadow: 0 0.2rem 0.5rem #fff;
+    z-index: 9999;
+    left: 0;
+}
+.sticky .logo {
+    margin-top: .0rem;
+}
+.sticky .main-nav li{
+margin-top: 1.5rem;
+}
+/*===== Header button ======*/
+a.btn.btn-hero {
+    text-decoration: none;
+    background: #EB7D4B;
+    display: inline-block;
+    padding: 2rem 5.5rem;
+    color: #fff;
+    border-bottom: .3rem solid #C86A40;
+    border-radius: .5rem;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+}
+
+/******* Start Services Section*****/
+/***********************************/
+.Services-Section {
+    background: linear-gradient(rgba(23, 194, 164, 0.9), rgba(23, 194, 164, 0.9)), url(img/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 8.6rem 0rem;
+    color: #fff;
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    height: .2rem;
+    width: 6rem;
+    margin: auto;
+    background: #14A58C;
+    margin-top: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.little-description {
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+    margin-left: 13.1rem;
+    margin-right: 13.1rem;
+    line-height: 1.5;
+}
+
+.Services-Section .row2 {
+    max-width: 95.9rem;
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 8.2rem;*/
+}
+.box {
+    margin-right: 6.9rem;
+    width: 18.5rem;
+    display: inline-block;
+}
+
+.lchild {
+    margin-right: -40px;
+    display: inline-block;
+    float: right;
+}
+
+.box .img {
+    margin-bottom: 4.3rem;
+
+}
+
+.box p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/******* Start Team Section*********/
+/***********************************/
+.team-section {
+    background: linear-gradient(rgba(231, 241, 248, 0.9), rgba(231, 241, 248, 0.9)), url(img/team-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    padding: 8.5rem 0rem;
+    text-align: center;
+}
+
+/****** Team section Heading *****/
+
+.team-section h2 {
+    font-size: 4.1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #3c4761;
+}
+
+.team-section h2::after {
+    background: #c8d9e5;
+}
+.team-section .row{
+    max-width: 101.6rem;
+    margin: 0 auto;
+}
+
+/****** Team section box *****/
+.team-section .box {
+    width: 19rem;
+    height: 50rem;
+    margin-right: 6.9rem;
+}
+
+.team-section .box:last-child {
+    margin-right: 0;
+    float: right;
+}
+
+.team-section .little-description {
+    font-size: 1.8rem;
+    margin-bottom: 6rem;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.5;
+    color: #3c4761;
+}
+
+img.teamimg {
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.team-section .box h3 {
+    color: #27283d;
+}
+
+span.role {
+    color: #30bae7;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.team-section .box p {
+    text-align: center;
+    margin-top: 2.1rem;
+    color: #3c4761;
+}
+
+/****** Team section icon *****/
+.teamicon {
+    margin-top: 2.5rem;
+    width: 19.1rem;
+}
+.teamicon .fab, .far, .fas {
+    font-weight: 400;
+    color: #fff;
+}
+
+.teamicon ul li {
+    margin: .4rem;
+
+}
+
+.teamicon ul li a:link {
+    color: #fff;
+}
+
+.teamicon ul li a:link i::before {
+    background: #bdd1df;
+    padding: 1.1rem;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    display: inline-block;
+    transition: .5s;
+}
+
+.teamicon ul li a:hover i::before {
+    background: #393939;
+    transform: rotate(360deg);
+}
+
+/******* Start Skill Section*********/
+/***********************************/
+.skills-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(img/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10.1rem 16.1rem;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-weight: 600;
+    color: #3c4761;
+}
+
+.skills-section .little-description {
+	font-size: 1.8rem;
+	margin-bottom: 6rem;
+	line-height: 1.5;
+	max-width: 70%;
+	margin-left: 14%;
+}
+
+.skills-section h2::after {
+    background: #dfe8ed;
+}
+
+svg.radial-progress text {
+    fill: #3c4761;
+    font-size: 2.0rem;
+    font-weight: 300;
+}
+
+svg.radial-progress circle {
+    stroke-width: .5rem;
+}
+
+svg.web-design circle {
+    stroke: #30bae7;
+}
+
+svg.html-css circle {
+    stroke: #d74680;
+}
+
+svg.graphic-design circle {
+    stroke: #15c7a8;
+}
+
+svg.ui-ux circle {
+    stroke: #eb7d4b;
+}
+
+.skills-section .box {
+    width: 18.5rem;
+    height: 21.5rem;
+    margin-right: 4.3rem;
+}
+
+.skills-section .box:last-child {
+    float: right;
+    margin-right: -4%;
+    margin-left: 0;
+}
+
+.skills-section .row {
+    max-width: 95.9rem;
+    margin: 0 auto;
+    margin-left: 6%;;
+}
+.skills-section h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #3c4761;
+    margin-top: 1.1rem;
+    text-align: center;
+}
+
+/******* Start Portfolio Section*********/
+/****************************************/
+.portfolio-section {
+    background: linear-gradient(rgba(255, 221, 153, 0.9),rgba(255, 221, 153, 0.9)),url(img/portfolio-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 9rem 0;
+    text-align: center;
+}
+
+.portfolio-section .row h2 {
+    color: #3C4761;
+    font-weight: 600;
+}
+
+.portfolio-section h2::after {
+    background: #e5c37f;
+}
+
+.portfolio-filter button {
+    background: #ebc985;
+    padding: 1.1rem 2rem;
+    margin: 0 0.7rem;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 0.7rem;
+    margin-bottom: 4.0rem;
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+     box-shadow: inset 0.1rem 0.1rem 1rem 0rem;
+}
+.portfolio-filter .mixitup-control-active{
+    background: #fff;
+}
+.portfolio-section .box {
+    width: 39.5rem;
+    height: 30.9rem;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3.8rem;
+    margin-right: -7.8rem;
+}
+/******* Start Testimonial Section*********/
+/******************************************/
+.testimonial{
+    background:linear-gradient(rgba(215, 70, 128, 0.9),rgba(215, 70, 128, 0.9)),url(img/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 9.7rem;
+    padding-bottom:10.5rem;
+}
+.testimonial h2{
+    color: #fff;
+    font-weight: 600;
+    
+}
+.testimonial h2::after{
+    background:#b73c6d;
+}
+.testimonial .little-description {
+    color: #fff;
+    text-align: center;
+}
+.testimonial .box {
+    margin-right: 31.8rem;
+}
+.testimonial .box:nth-child(1),
+.testimonial .box:nth-child(2){
+     margin-bottom: 11.9rem;
+}
+.testimonial .client-img img {
+	height: 130px;
+	border-radius: 50%;
+	width: 130px;
+	margin: 0 auto;
+}
+.testimonial-single-box {
+	text-align: center;
+}
+.testimonial .description-box {
+	display: inline-block;
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+}
+.testimonial .testimonial-row2 {
+    max-width: 104rem;
+}
+.client-review p {
+	color: #fff;
+	font-size: 2.1rem;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 2.7rem;
+	line-height: 35px;
+	margin-top: 20px;
+}
+.testimonial-row2 h3{
+    color: #ffff;
+}
+.testimonial-row2 .role{
+    color: #ffdd99;
+}
+/********* End Testimonial Section ********/
+
+/*********** Start contact Section*********/
+/******************************************/
+.contact-section {
+    background: linear-gradient(rgba(60, 84, 153, 0.9),rgba(60, 84, 153, 0.9)),url(img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+    background-attachment: fixed;
+    padding-top: 9.3rem;
+    padding-bottom: 8.1rem;
+}
+.contact-section h2 {
+    color: #fff;
+    font-weight: 500;
+    word-spacing: 0.4rem;
+}
+.contact-section h2::after{
+    background: #273a71;
+}
+.contact-section .little-description{
+    color: #ffff;
+    text-align: center;
+}
+.contact-section form {
+    width: 80rem;
+    margin-left: 10rem;
+    text-align: center;
+}
+input[type=text],
+input[type=email],
+textarea{
+    background: #273a71;
+    margin: 1.9rem 0;
+    color: #ffff;
+}
+.contact-section textarea {
+    width: 80rem;
+    height: 19.8rem;
+    border: none;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+    margin-top: 0rem;
+}
+input[type=text], input[type=email] {
+    width: 39.1rem;
+    border: none;
+    height: 5.4rem;
+    border-radius: 0.7rem;
+    float: left;
+    margin-top: 0;
+    box-sizing: border-box;
+    padding: 1.2rem;
+}
+input[type=email]{
+    float: right;
+}
+input[type=text]::-webkit-input-placeholder{
+    color: #ffff;
+}
+input[type=text]::-moz-placeholder{
+    color: #ffff;
+}
+input[type=text]:-ms-input-placeholder{
+    color: #ffff;
+}
+input[type=text]::-ms-input-placeholder{
+    color: #ffff;
+}
+input[type=text]::placeholder{
+    color: #ffff;
+}
+input[type=email]::-webkit-input-placeholder{
+    color: #ffff;
+}
+input[type=email]::-moz-placeholder{
+    color: #ffff;
+}
+input[type=email]:-ms-input-placeholder{
+    color: #ffff;
+}
+input[type=email]::-ms-input-placeholder{
+    color: #ffff;
+}
+input[type=email]::placeholder{
+    color: #ffff;
+}
+.contact-section .contact-btn {
+    background: #30BAE7;
+    padding: 1.8rem 6rem;
+    margin-top: 4.0rem;
+    border: none;
+    border-bottom: .3rem solid #299EC5;
+    border-radius: 0.4rem;
+    color: #ffff;
+    cursor: pointer;
+}
+/********* End Contact Section ********/
+.footer-section{
+    background: #344B8E;
+    padding-top: 3.7rem;
+    padding-bottom: 3.2rem;
+    border-top:1px solid rgba(255, 255, 255, 0.4);
+}
+.footer-section .menus {
+    text-align: center;
+}
+.footer-section li {
+    margin-right: 4.4rem;
+}
+.footer-section li:last-child{
+    margin-right: 0;
+}
+.footer-section li a {
+    font-size: 2.4rem;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-section li a:hover{
+    color: #30bae7;
+}

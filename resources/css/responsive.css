@@ -1,0 +1,372 @@
+/* Standard Media Query */
+/* @media(min-width:768px) and (max-width:991px){
+    
+}
+@media(max-width:767px){
+    
+}
+@media(max-width:414px){
+    
+}
+@media(max-width:375px){
+    
+}
+@media(max-width:360px){
+
+} */
+@media(min-width:1025px) and (max-width:1200px){
+    
+}
+@media(min-width:992px) and (max-width:1024px){
+    header {
+        height: 48vh;
+    }
+    .Services-Section .box {
+        width: 40%;
+        margin: 44px;
+    }
+    .team-section .box {
+        width: 40%;
+        margin: 25px 44px;
+    }
+    .teamicon {
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+    .skills-section .little-description {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 34px;
+    }
+    .skills-section .box {
+        width: 50%;
+        margin: 0;
+        height: 261px;
+    }
+    .skills-section .box:last-child {
+        float: right;
+        margin: 0;
+    }
+    .portfolio-section .box {
+        width: 40%;
+        height: 30.9rem;
+    }
+    .contact-section form {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .form-row {
+        width:80rem;
+        margin: 0 auto;
+    }
+}
+@media(min-width:992px){
+    .nav-toggler{
+        display: none;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    h1 {
+        width: 60%;
+        margin: 0 auto;
+        line-height: 40px;
+    }
+    .main-nav {
+        background: #1eb89c;
+        top: 83px;
+        position: absolute;
+        left: 38px;
+        right: 38px;
+        z-index: 999;
+    }
+    .main-nav li {
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 12px;
+    }
+    header {
+        height: 400px;
+    }
+    .hero-text-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .box {
+        width: 50%;
+        margin: 0;
+        padding: 0 20px;
+    }
+    .box .img {
+        margin: 25px 0;
+        height: 80px;
+    }
+    .team-section .box {
+        width: 50%;
+        height: auto;
+        margin:0;
+    }
+    .teamicon {
+        width: 63%;
+        margin: 24px auto;
+    }
+    .skills-section .little-description {
+        max-width: 100%;
+        margin: 15px auto;
+    }
+    .skills-section {
+        padding: 30px 0;
+    }
+    .skills-section .box {
+        width: 50%;
+        height: 25.5rem;
+        margin-right: 0;
+    }
+    .skills-section .row {
+        margin-left: 0;
+    }
+    .skills-section .box:last-child {
+        margin-right: 0;
+    }
+    .portfolio-section .box {
+        width: 50%;
+        height: 26.9rem;
+    }
+    .portfolio-img {
+        margin-right: 0;
+    }
+    .contact-section form {
+        width: 100%;
+        margin-left: 0;
+    }
+    .contact-section textarea {
+        width: 100%;
+    }
+    input[type="text"], input[type="email"] {
+        width: 100%;
+    }
+    .footer-section li a {
+        font-size: 22px;
+        padding: 10px;
+        display: inline-block;
+    }
+}
+@media(max-width:991px){
+    /* Header */
+    .main-nav{
+        display: none;
+    }
+    .nav-toggler {
+        float: right;
+        margin-top: 30px;
+        font-size: 30px;
+        color: #fff;
+    }
+    img.logo {
+        margin-top: 2rem;
+    }
+    .sticky {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 0 20px;
+    }
+    .sticky .nav-toggler {
+        margin-top: 15px;
+    }
+}
+@media(max-width:767px){
+    /* Default */
+    h2 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+     /* Header */
+    .main-nav {
+        float: none;
+        text-align: center;
+        background: #14A58C;
+        position: relative;
+        left: 0;
+        top: 15px;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+    }
+    .main-nav li {
+        display: block;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .active {
+        border-radius: 0;
+    }
+    .main-nav a {
+        width: 100%;
+        border-radius: 0 !important;
+        padding: 10px !important;
+    }
+    .hero-text-box {
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        left: 0;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        transform: translate(0);
+    }
+    header {
+        height: 430px;
+    }
+    /* Service */
+    .Services-Section {
+        padding: 30px 0;
+    }
+    .little-description {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .box {
+        margin-right: 0;
+        width: 100%;
+    }
+    .box .img {
+        margin-bottom: 20px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    /* Team */
+    .team-section {
+        padding: 30px 0;
+    }
+    .team-section h2 {
+        font-size: 3rem;
+    }
+    .team-section .little-description {
+        margin-bottom: 3rem;
+    }
+    .team-section .box {
+        width: 100%;
+        margin-right: 0;
+        height: auto;
+    }
+    .teamicon {
+        width: 100%;
+    }
+    /* Skill */
+    .skills-section {
+        padding: 30px 0;
+    }
+    .skills-section .little-description {
+        margin-bottom: 2rem;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .skills-section .box {
+        width: 100%;
+        height: 24.5rem;
+        margin-right: 0;
+    }
+    .skills-section .row {
+        max-width: 100% ;
+        margin-left: 0;
+    }
+    /* Portfolio */
+    .portfolio-section {
+        padding: 30px 0;
+    }
+    .portfolio-filter {
+        margin-top: 20px;
+    }
+    .portfolio-img {
+        margin-right: 0;
+        max-width: 60%;
+    }
+    .portfolio-section .box {
+        width: 100%;
+    }
+    h4 {
+        margin-right: 0;
+    }
+    /* testimonial */
+    .testimonial {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .testimonial .little-description {
+        margin-bottom: 20px;
+    }
+    .testimonial .testimonial-row2 {
+        max-width: 100%;
+    }
+    .client-img {
+        text-align: center;
+    }
+    .testimonial .client-img img {
+        float: none;
+    }
+    .testimonial .description-box {
+        margin-right: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+    .client-review p {
+        text-align: center;
+    }
+    .testimonial .box:nth-child(1), .testimonial .box:nth-child(2) {
+        margin-bottom: 25px;
+    }
+    .testimonial-row2 h3 {
+        text-align: center;
+    }
+    .testimonial-row2 .role {
+        color: #ffdd99;
+        text-align: center;
+        display: block;
+    }
+    /* Testimonial */
+    .contact-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    /* Contact */
+    .contact-section form {
+        width: 100%;
+        margin-left: 0;
+    }
+    input[type="email"] {
+        float: none;
+    }
+    input[type="text"], input[type="email"] {
+        width: 100%;
+    }
+    .contact-section textarea {
+        width: 100%;
+    }
+    .contact-section .contact-btn {
+        margin-top: 1rem;
+    }
+    .contact-section .little-description {
+        margin-bottom: 20px;
+    }
+    /* Footer */
+    .footer-section li {
+        margin-right: 0;
+        padding: 10px;
+    }
+}
+@media(max-width:414px){
+    
+}
+@media(max-width:375px){
+    
+}
+@media(max-width:360px){
+
+}
